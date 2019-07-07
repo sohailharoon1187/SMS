@@ -1,0 +1,45 @@
+<div id="accordion">
+    <div class="card">
+      <div class="card-header" id="headingOne">
+        <h6 class="mb-0">
+            Today's Employee Attendance
+            <span id="icons-btn">
+                <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <i class="fas fa-angle-down"></i>
+                </button>
+                <button class="btn btn-link" (click)="Check()">
+                    <i class="fas fa-sync-alt"></i>
+                </button>
+              </span>
+          </h6>
+            
+       
+      </div>
+
+      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="table-responsive">          
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Subject</th>
+                    <th>Follower</th>
+                    <th>View Details</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>12/8/2019</td>
+                    <td>December</td>
+                    <td>ALL</td>
+                    <td><button class="btn btn-link" >
+                        <i class="fas fa-sync-alt"></i>view details
+                    </button></td>
+                  </tr>
+                </tbody>
+              </table>
+              </div>
+      </div>
+    </div>
+    
+  </div>
