@@ -1,23 +1,23 @@
 <div id="accordion">
     <div class="card">
       <div class="card-header" id="headingOne">
-        <h6 class="mb-0">
+        <h6 class="mb-0" id="text1">
             Today's Employee Attendance
             <span id="icons-btn">
                 <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    <i class="fas fa-angle-down"></i>
+                    <i class="fas fa-angle-down" id="text1"></i>
                 </button>
                 <button class="btn btn-link" (click)="Check()">
-                    <i class="fas fa-sync-alt"></i>
+                    <i class="fas fa-sync-alt" id="text1"></i>
                 </button>
               </span>
           </h6>
-            
-       
+
+
       </div>
 
       <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-          <div class="table-responsive">          
+          <div class="table-responsive">
               <table class="table table-bordered">
                 <thead>
                   <tr>
@@ -39,5 +39,5 @@
               </div>
       </div>
     </div>
-    
+
   </div>
