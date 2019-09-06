@@ -1,0 +1,1194 @@
+<div>
+	<div class="page-titles">
+		<div class="row">
+			<div class="col-12 col-sm-6">
+				<h3 class="text-themecolor">Mark Attendance</h3>
+			</div>
+			<div class="col-12 col-sm-6">
+				<div class="action-buttons pull-right">
+					<button class="btn btn-info btn-sm"> <i class="fas fa-list"></i>
+						<span class="d-none d-sm-inline">List Attendance</span>
+					</button>
+					<button class="btn btn-info btn-sm"> <i class="fas fa-clock"></i>
+						<span class="d-none d-sm-inline">Mark Production based Attendance</span>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="card">
+			<div class="card-body p-4">
+				<form>
+					<div class="row">
+						<div class="col-12 col-sm-3">
+							<div class="form-group">
+								<label for="">Department</label>
+								<div tabindex="-1" class="multiselect">
+									<div class="multiselect__select"></div>
+									<div class="multiselect__tags">
+										<div class="multiselect__tags-wrap" style="display: none;"></div>
+										<!---->
+										<div class="multiselect__spinner" style="display: none;"></div>
+										<input name="department_id" id="department_id" type="text" autocomplete="nope" placeholder="Select Department" tabindex="0" class="multiselect__input" style="width: 0px; position: absolute; padding: 0px;">
+										<!----> <span class="multiselect__placeholder">
+  Select Department
+</span>
+									</div>
+									<div tabindex="-1" class="multiselect__content-wrapper" style="max-height: 300px; display: none;">
+										<ul class="multiselect__content" style="display: inline-block;">
+											<!---->
+											<li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option multiselect__option--highlight"><span>Administration Department</span></span>
+												<!---->
+											</li>
+											<li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Academic Department</span></span>
+												<!---->
+											</li>
+											<li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>HR Department</span></span>
+												<!---->
+											</li>
+											<li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>IT &amp; Networking Department</span></span>
+												<!---->
+											</li>
+											<li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Finance Department</span></span>
+												<!---->
+											</li>
+											<li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Other</span></span>
+												<!---->
+											</li>
+											<li style="display: none;"><span class="multiselect__option">No elements found. Consider changing the search query.</span>
+											</li>
+											<li style="display: none;"><span class="multiselect__option">List is empty.</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-3">
+							<div class="form-group">
+								<label for="">Designation</label>
+								<div tabindex="-1" class="multiselect">
+									<div class="multiselect__select"></div>
+									<div class="multiselect__tags">
+										<div class="multiselect__tags-wrap" style="display: none;"></div>
+										<!---->
+										<div class="multiselect__spinner" style="display: none;"></div>
+										<input name="designation_id" id="designation_id" type="text" autocomplete="nope" placeholder="Select Designation" tabindex="0" class="multiselect__input" style="width: 0px; position: absolute; padding: 0px;">
+										<!----> <span class="multiselect__placeholder">
+  Select Designation
+</span>
+									</div>
+									<div tabindex="-1" class="multiselect__content-wrapper" style="max-height: 300px; display: none;">
+										<ul class="multiselect__content" style="display: inline-block;">
+											<!---->
+											<li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option multiselect__option--highlight"><span>Director</span></span>
+												<!---->
+											</li>
+											<li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Manager</span></span>
+												<!---->
+											</li>
+											<li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Principal</span></span>
+												<!---->
+											</li>
+											<li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>School Coordinator</span></span>
+												<!---->
+											</li>
+											<li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Post Graduate Teacher</span></span>
+												<!---->
+											</li>
+											<li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Trained Graduate Teacher</span></span>
+												<!---->
+											</li>
+											<li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Primary Teacher</span></span>
+												<!---->
+											</li>
+											<li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Nursery Trained Teacher</span></span>
+												<!---->
+											</li>
+											<li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Account Manager</span></span>
+												<!---->
+											</li>
+											<li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Accountant</span></span>
+												<!---->
+											</li>
+											<li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Cashier</span></span>
+												<!---->
+											</li>
+											<li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Library Manager</span></span>
+												<!---->
+											</li>
+											<li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Librarian</span></span>
+												<!---->
+											</li>
+											<li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Hostel Manager</span></span>
+												<!---->
+											</li>
+											<li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Warden</span></span>
+												<!---->
+											</li>
+											<li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Transport Manager</span></span>
+												<!---->
+											</li>
+											<li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Driver</span></span>
+												<!---->
+											</li>
+											<li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Conductor</span></span>
+												<!---->
+											</li>
+											<li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Supervisor</span></span>
+												<!---->
+											</li>
+											<li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Security Guard</span></span>
+												<!---->
+											</li>
+											<li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Cleaning Staff</span></span>
+												<!---->
+											</li>
+											<li class="multiselect__element"><span data-select="Press enter to select" data-selected="Selected" data-deselect="Press enter to remove" class="multiselect__option"><span>Sweeper</span></span>
+												<!---->
+											</li>
+											<li style="display: none;"><span class="multiselect__option">No elements found. Consider changing the search query.</span>
+											</li>
+											<li style="display: none;"><span class="multiselect__option">List is empty.</span>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-3">
+							<div class="form-group">
+								<label for="">Date of Attendance</label>
+								<div class="vdp-datepicker">
+									<div class="input-group">
+										<!---->
+										<input type="text" placeholder="Date of Attendance" readonly="readonly" autocomplete="off" class="form-control">
+										<!---->
+									</div>
+									<div class="vdp-datepicker__calendar" style="display: none;">
+										<header><span class="prev">&lt;</span>  <span class="day__month_btn up">Sep 2019</span>  <span class="next">&gt;</span>
+										</header>
+										<div class=""><span class="cell day-header">Sun</span><span class="cell day-header">Mon</span><span class="cell day-header">Tue</span><span class="cell day-header">Wed</span><span class="cell day-header">Thu</span><span class="cell day-header">Fri</span><span class="cell day-header">Sat</span>
+											<!----><span class="cell day weekend sun">1</span><span class="cell day">2</span><span class="cell day">3</span><span class="cell day">4</span><span class="cell day selected today">5</span><span class="cell day">6</span><span class="cell day weekend sat">7</span><span class="cell day weekend sun">8</span><span class="cell day">9</span><span class="cell day">10</span><span class="cell day">11</span><span class="cell day">12</span><span class="cell day">13</span><span class="cell day weekend sat">14</span><span class="cell day weekend sun">15</span><span class="cell day">16</span><span class="cell day">17</span><span class="cell day">18</span><span class="cell day">19</span><span class="cell day">20</span><span class="cell day weekend sat">21</span><span class="cell day weekend sun">22</span><span class="cell day">23</span><span class="cell day">24</span><span class="cell day">25</span><span class="cell day">26</span><span class="cell day">27</span><span class="cell day weekend sat">28</span><span class="cell day weekend sun">29</span><span class="cell day">30</span>
+										</div>
+									</div>
+									<div class="vdp-datepicker__calendar" style="display: none;">
+										<header><span class="prev">&lt;</span>  <span class="month__year_btn up">2019</span>  <span class="next">&gt;</span>
+										</header> <span class="cell month">January</span><span class="cell month">February</span><span class="cell month">March</span><span class="cell month">April</span><span class="cell month">May</span><span class="cell month">June</span><span class="cell month">July</span><span class="cell month">August</span><span class="cell month selected">September</span><span class="cell month">October</span><span class="cell month">November</span><span class="cell month">December</span>
+									</div>
+									<div class="vdp-datepicker__calendar" style="display: none;">
+										<header><span class="prev">&lt;</span>  <span>2010 - 2019</span>  <span class="next">&gt;</span>
+										</header> <span class="cell year">2010</span><span class="cell year">2011</span><span class="cell year">2012</span><span class="cell year">2013</span><span class="cell year">2014</span><span class="cell year">2015</span><span class="cell year">2016</span><span class="cell year">2017</span><span class="cell year">2018</span><span class="cell year selected">2019</span>
+									</div>
+								</div>
+								<!---->
+							</div>
+						</div>
+					</div>
+					<!---->
+					<div class="row m-t-40">
+						<div class="col-12">
+							<div data-grammarly-part="highlights" class="u_fNK" style="position: absolute; top: 0px; left: 0px;">
+								<div style="box-sizing: content-box; top: 0px; left: 15px; width: 1241px; height: 3768px; position: relative; pointer-events: none; overflow: hidden; border: 0px; border-radius: 0px; padding: 0px; margin: 0px;">
+									<div style="box-sizing: content-box; top: 84px; left: 756px; width: 464px; height: 36px; position: relative; pointer-events: none; overflow: hidden; border: 0px; border-radius: 0px; padding: 0px; margin: 0px;">
+										<div style="position: absolute; top: 0px; left: 0px;">
+											<div style="height: 764px; width: 1830px;"></div>
+											<div style="position: absolute; top: 0px; left: 0px; height: 764px; width: 1830px;"></div>
+										</div>
+									</div>
+									<div style="box-sizing: content-box; width: 2607px; height: 4496px; pointer-events: none; visibility: hidden;"></div>
+								</div>
+							</div>
+							<div data-grammarly-part="button" class="u_fNK" style="position: absolute; top: 0px; left: 0px;">
+								<div style="box-sizing: content-box; top: 0px; left: 15px; width: 1241px; height: 3768px; position: relative; pointer-events: none; overflow: hidden; border: 0px; border-radius: 0px; padding: 0px; margin: 0px;">
+									<div style="box-sizing: content-box; top: 84px; left: 756px; width: 464px; height: 36px; position: relative; pointer-events: none; overflow: hidden; border: 0px; border-radius: 0px; padding: 0px; margin: 0px;">
+										<div style="position: absolute; transform: translate(-100%, -100%); top: 28px; left: 452px; width: auto; height: auto; pointer-events: all;">
+											<div style="display: flex; flex-direction: row;">
+												<div style="position: relative;"></div>
+												<div>
+													<div class="_5WizN _1QzSN">
+														<div class="_3YmQx">
+															<div title="Protected by Grammarly" class="_3QdKe">&nbsp;</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div style="box-sizing: content-box; width: 2607px; height: 4496px; pointer-events: none; visibility: hidden;"></div>
+								</div>
+							</div>
+							
+							<div class="table-responsive p-2">
+								<table class="table">
+									<thead>
+										<tr>
+											<th width="30%">Name</th>
+											<th width="30%">
+												<select class="custom-select">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</th>
+											<th width="40%"></th>
+										</tr>
+									</thead>
+									<tbody>
+										<tr>
+											<td>Barrett Buckridge (SM110)
+												<br> <span class="font-80pc">Nursery Trained Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_0" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;" autocomplete="off" spellcheck="false"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Bartholome Labadie (SM114)
+												<br> <span class="font-80pc">Nursery Trained Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_1" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Bert Fadel (SM139)
+												<br> <span class="font-80pc">Cashier (Accounting Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_2" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Beverly Feest (SM146)
+												<br> <span class="font-80pc">Conductor (Transport Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_3" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Carolyn Rau (SM111)
+												<br> <span class="font-80pc">Post Graduate Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_4" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Cecil Hegmann (SM113)
+												<br> <span class="font-80pc">Nursery Trained Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_5" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Cleve Lindgren (SM109)
+												<br> <span class="font-80pc">Post Graduate Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_6" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Clovis Toy (SM135)
+												<br> <span class="font-80pc">Trained Graduate Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_7" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Cloyd Swaniawski (SM108)
+												<br> <span class="font-80pc">Nursery Trained Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_8" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Dangelo Bayer (SM142)
+												<br> <span class="font-80pc">Hostel Manager (Hostel Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_9" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Diamond Stroman (SM149)
+												<br> <span class="font-80pc">Cleaning Staff (Non Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_10" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Elisa Willms (SM128)
+												<br> <span class="font-80pc">Primary Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_11" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Emilia Nienow (SM119)
+												<br> <span class="font-80pc">Primary Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_12" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Felicity Blanda (SM129)
+												<br> <span class="font-80pc">Post Graduate Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_13" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Garret Spinka (SM144)
+												<br> <span class="font-80pc">Transport Manager (Transport Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_14" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Glenna Flatley (SM116)
+												<br> <span class="font-80pc">Trained Graduate Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_15" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Greyson Kohler (SM143)
+												<br> <span class="font-80pc">Warden (Hostel Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_16" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Hershel Hagenes (SM148)
+												<br> <span class="font-80pc">Security Guard (Non Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_17" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Iliana Fritsch (SM130)
+												<br> <span class="font-80pc">Nursery Trained Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_18" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Jalyn Stark (SM137)
+												<br> <span class="font-80pc">Account Manager (Accounting Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_19" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Jasper Johnston (SM101)
+												<br> <span class="font-80pc">Director (Administrative Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_20" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Jazmin Torphy (SM104)
+												<br> <span class="font-80pc">School Coordinator (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_21" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Jennyfer Welch (SM134)
+												<br> <span class="font-80pc">Trained Graduate Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_22" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Joanny Graham (SM147)
+												<br> <span class="font-80pc">Supervisor (Non Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_23" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Joelle Jones (SM127)
+												<br> <span class="font-80pc">Nursery Trained Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_24" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Jordan Prosacco (SM103)
+												<br> <span class="font-80pc">Principal (Administrative Staff)</span>  <span class="text-success font-80pc"><br>(Payroll Generated)</span>
+											</td>
+											<td>
+												<p class="font-90pc text-danger font-weight-bold">(Leave Approved)</p>
+											</td>
+											<td>
+												<!---->
+											</td>
+										</tr>
+										<tr>
+											<td>Jordon Kessler (SM132)
+												<br> <span class="font-80pc">Nursery Trained Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_26" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Kali Fisher (SM122)
+												<br> <span class="font-80pc">Nursery Trained Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_27" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Kayla Feeney (SM136)
+												<br> <span class="font-80pc">Nursery Trained Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_28" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Keeley McClure (SM124)
+												<br> <span class="font-80pc">Trained Graduate Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_29" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Liana Prohaska (SM123)
+												<br> <span class="font-80pc">Post Graduate Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_30" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Libbie Balistreri (SM118)
+												<br> <span class="font-80pc">Post Graduate Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_31" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Linnea Nitzsche (SM107)
+												<br> <span class="font-80pc">Primary Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_32" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Marlin Walter (SM141)
+												<br> <span class="font-80pc">Librarian (Library Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_33" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Maryse Tremblay (SM102)
+												<br> <span class="font-80pc">Manager (Administrative Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_34" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Maurine Koepp (SM140)
+												<br> <span class="font-80pc">Library Manager (Library Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_35" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Melissa Kemmer (SM120)
+												<br> <span class="font-80pc">Post Graduate Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_36" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Mireille Braun (SM121)
+												<br> <span class="font-80pc">Primary Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_37" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Oran Homenick (SM117)
+												<br> <span class="font-80pc">Trained Graduate Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_38" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Orpha Mosciski (SM112)
+												<br> <span class="font-80pc">Nursery Trained Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_39" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Patricia Lubowitz (SM145)
+												<br> <span class="font-80pc">Driver (Transport Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_40" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Quincy Flatley (SM125)
+												<br> <span class="font-80pc">Primary Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_41" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>River O'Kon (SM150)
+												<br> <span class="font-80pc">Sweeper (Non Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_42" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Sallie Bergstrom (SM133)
+												<br> <span class="font-80pc">Primary Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_43" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Sandrine Emard (SM115)
+												<br> <span class="font-80pc">Nursery Trained Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_44" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Taryn O'Hara (SM131)
+												<br> <span class="font-80pc">Primary Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_45" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Tatum Lind (SM138)
+												<br> <span class="font-80pc">Accountant (Accounting Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_46" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Trenton Metz (SM106)
+												<br> <span class="font-80pc">Nursery Trained Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_47" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Waino Kulas (SM105)
+												<br> <span class="font-80pc">Post Graduate Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_48" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+										<tr>
+											<td>Zora Padberg (SM126)
+												<br> <span class="font-80pc">Primary Teacher (Teaching Staff)</span>
+												<!---->
+											</td>
+											<td>
+												<select class="custom-select col-12">
+													<option value="null">Select One</option>
+													<option value="1">Present (P)</option>
+													<option value="2">Holiday (H)</option>
+													<option value="3">Absent (A)</option>
+													<option value="4">Half Day (HD)</option>
+													<option value="7">Present (Late) (LT)</option>
+												</select>
+											</td>
+											<td>
+												<textarea rows="1" placeholder="Remarks" name="remarks_49" class="form-control" style="overflow: hidden; overflow-wrap: break-word; height: 38px;"></textarea>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+					<button type="submit" class="btn btn-info pull-right">Save</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

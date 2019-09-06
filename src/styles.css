@@ -1,4 +1,6 @@
+
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
 @keyframes swing {
   0% {
     transform: rotate(0deg);
@@ -239,7 +241,9 @@ body {
   animation: swing ease-in-out 0.5s 1 alternate;
 }
 
-.sidebar-wrapper .sidebar-menu .sidebar-dropdown > a:after {
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown > a:after,
+.sidebar-menu .sidebar-dropdown .sidebar-submenu .submenu-dropdown > a:after
+ {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f105";
@@ -297,7 +301,9 @@ body {
   display: none;
 }
 
-.sidebar-wrapper .sidebar-menu .sidebar-dropdown.active > a:after {
+.sidebar-wrapper .sidebar-menu .sidebar-dropdown.active > a:after,
+.sidebar-menu .sidebar-dropdown .sidebar-submenu .submenu-dropdown.active > a:after
+{
   transform: rotate(90deg);
   right: 17px;
 }
@@ -427,6 +433,7 @@ body {
 .chiller-theme .sidebar-wrapper .sidebar-menu ul li a,
 .chiller-theme .sidebar-footer>a {
     color: #818896;
+    cursor: pointer;
 }
 
 .chiller-theme .sidebar-wrapper .sidebar-menu ul li:hover>a,
@@ -478,7 +485,4 @@ body {
     border-right: none;
 }
 
-  i.fas,
-  i.fab {
-    border: 1px solid red;
-  }
+

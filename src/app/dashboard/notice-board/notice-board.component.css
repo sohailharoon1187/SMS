@@ -5,9 +5,13 @@
     height: 236px;
   }
   #headingOne{
-    background-color:#1b88e2;
+    background-color:#4CAF50;
     color:#fff;
   }
 #text1{
   color:#fff;
+}
+.table-bordered{
+  margin-top:8px;
+  margin-left:5px;
 }

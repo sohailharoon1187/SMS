@@ -1,10 +1,10 @@
-<div id="accordion">
+<div id="employeeAttendance">
     <div class="card">
       <div class="card-header" id="headingOne">
         <h6 class="mb-0" id="text1">
             Today's Employee Attendance
             <span id="icons-btn">
-                <button class="btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <button class="btn" data-toggle="collapse" data-target="#collapseemployeeAttendance" aria-expanded="true" aria-controls="collapseOne">
                     <i class="fas fa-angle-down" id="text1"></i>
                 </button>
                 <button class="btn btn-link" (click)="Check()">
@@ -16,26 +16,38 @@
 
       </div>
 
-      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div id="collapseemployeeAttendance" class="collapse show" aria-labelledby="headingOne" data-parent="#employeeAttendance">
           <div class="table-responsive">
-              <table class="table table-bordered">
-                <thead>
-                  <tr>
-                    <th>#</th>
-                    <th>Name</th>
-                    <th>Attendance</th>
-                    <th>Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>Anna</td>
-                    <td>23</td>
-                    <td>Present</td>
-                  </tr>
-                </tbody>
-              </table>
+            <table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+
+              <!-- Position Column -->
+              <ng-container matColumnDef="position">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> No. </th>
+                <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+              </ng-container>
+
+              <!-- Name Column -->
+              <ng-container matColumnDef="name">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+                <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+              </ng-container>
+
+              <!-- Weight Column -->
+              <ng-container matColumnDef="weight">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Weight </th>
+                <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+              </ng-container>
+
+              <!-- Symbol Column -->
+              <ng-container matColumnDef="symbol">
+                <th mat-header-cell *matHeaderCellDef mat-sort-header> Symbol </th>
+                <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+              </ng-container>
+
+              <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+              <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+
               </div>
       </div>
     </div>

@@ -10,6 +10,7 @@ import { NoticeBoardComponent } from './notice-board/notice-board.component';
 import { AttendanceSummaryComponent } from './attendance-summary/attendance-summary.component';
 import { ClassAttendanceComponent } from './class-attendance/class-attendance.component';
 import { MessageBoxComponent } from './message-box/message-box.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 @NgModule({
@@ -25,8 +26,9 @@ import { MessageBoxComponent } from './message-box/message-box.component';
   ],
   imports: [
     CommonModule,
-    DashboardRoutingModule
+    DashboardRoutingModule,
+    MatFormFieldModule
   ],
-  exports: [StatsComponent, EmployeeAttendanceComponent, NoticeBoardComponent, AttendanceSummaryComponent, ClassAttendanceComponent, MessageBoxComponent]
+  exports: []
 })
 export class DashboardModule { }

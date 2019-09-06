@@ -20,18 +20,26 @@ import { SettingsModule } from './settings/settings.module';
 import { DashbordConfigurationComponent } from './dashbord-configuration/dashbord-configuration.component';
 import { AcademicModule } from './academic/academic.module';
 import { SearchModule } from './search/search.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MaterialModule } from './material.module';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     ProfileComponent,
-    DashbordConfigurationComponent
+    DashbordConfigurationComponent,
+
   ],
   imports: [
     BrowserModule,
     MDBBootstrapModule.forRoot(),
     AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MaterialModule,
     AcademicModule,
     SearchModule,
     DashboardModule,
@@ -44,9 +52,11 @@ import { SearchModule } from './search/search.module';
     MobileMessageModule,
     StoreManagementModule,
     EventsModule,
-    SettingsModule
+    SettingsModule,
+
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  //exports: [ProductListComponent]
 })
 export class AppModule { }

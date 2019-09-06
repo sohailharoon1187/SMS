@@ -41,7 +41,7 @@
             <span>General</span>
           </li>
           <li class="sidebar">
-            <a href="#">
+            <a routerLink="/dashboard">
               <i class="fa fa-tachometer-alt"></i>
               <span>Dashboard</span>
 
@@ -49,118 +49,246 @@
 
           </li>
           <li class="sidebar-dropdown">
-            <a href="#">
+            <a>
               <i class="fa fa-users"></i>
               <span>Academic</span>
-              <span class="badge badge-pill badge-danger">5</span>
+
             </a>
             <div class="sidebar-submenu">
               <ul>
-                <li>
-                  <a href="#">Course/Class
+                  <li class="submenu-dropdown">
+                      <a>Course/Class </a>
+                        <div class="submenu-submenu">
+                          <ul>
+                            <li>
+                              <a routerLink="/academic/addclass">Add Class</a>
+                            </li>
+                            <li>
+                                <a routerLink="/academic/addsection">Add Section</a>
+                              </li>
+                              <li>
+                                  <a routerLink="/academic/classinformation">Class Information</a>
+                                </li>
+                                <li>
+                                    <a routerLink="/academic/classpromotion">Class Promotion</a>
+                                  </li>
+                          </ul>
+                        </div>
 
-                  </a>
-                </li>
-                <li>
-                  <a href="#">Subject
+                    </li>
+                <li class="submenu-dropdown">
+                  <a>Subject</a>
 
-                  </a>
-                </li>
-                <li>
-                  <a href="#">Routine/TimeTable</a>
-                </li>
-                <li>
-                  <a href="#">Examination</a>
-                </li>
-                <li>
-                  <a href="#">Notice
+                  <div class="submenu-submenu">
+                      <ul>
+                        <li>
+                          <a routerLink="/academic/addsubject">Add Subject</a>
+                        </li>
+                        <li>
+                            <a routerLink="/academic/allsubjects">All Subjects</a>
+                          </li>
+                          <li>
+                              <a routerLink="/academic/addoptionalsubject">Add Optional Subject</a>
+                            </li>
 
-                  </a>
+                      </ul>
+                    </div>
+
+                </li>
+                <li class="submenu-dropdown">
+                  <a>Routine/TimeTable</a>
+                  <div class="submenu-submenu">
+                      <ul>
+                        <li>
+                          <a routerLink="/academic/settimetable">Set Timetable</a>
+                        </li>
+                        <li>
+                            <a routerLink="/academic/classtimetable">Class Timetable</a>
+                          </li>
+                          <li>
+                              <a routerLink="/academic/teachertimetable">Teacher Timetable</a>
+                            </li>
+
+                      </ul>
+                    </div>
+
+                </li>
+                <li class="submenu-dropdown">
+                  <a>Examination</a>
+                    <div class="submenu-submenu">
+                        <ul>
+                          <li>
+                            <a routerLink="/academic/setexamgrade">Set Exam Grade</a>
+                          </li>
+                          <li>
+                              <a routerLink="/academic/setgradeinfo">Set Grade Info</a>
+                          </li>
+                          <li>
+                                <a routerLink="/academic/createexam">Create Exam & Routine</a>
+                          </li>
+                          <li>
+                              <a routerLink="/academic/allexamroutine">All Exam Routine</a>
+                          </li>
+                            <li>
+                              <a routerLink="/academic/takeexamattendance">Take Exam Attendance</a>
+                            </li>
+                            <li>
+                                  <a routerLink="/academic/examattendance">Exam Attendance</a>
+                            </li>
+                            <li>
+                                <a routerLink="/academic/submitresultsheet">Submit Result Sheet</a>
+                            </li>
+                              <li>
+                                <a routerLink="/academic/approveresultsheet">Approve Result Sheet</a>
+                              </li>
+                              <li>
+                                    <a routerLink="/academic/examresult">Exam Result</a>
+                              </li>
+                              <li>
+                                  <a routerLink="/academic/studentsmarksheet">Students Mark Sheet</a>
+                            </li>
+
+
+                        </ul>
+                      </div>
+                </li>
+                <li class="submenu-dropdown">
+                  <a>Notice</a>
+
+                    <div class="submenu-submenu">
+                      <ul>
+                        <li>
+                          <a routerLink="/academic/publishnotice">Publish Notice</a>
+                        </li>
+                        <li>
+                            <a routerLink="/academic/allnotices">All Notices</a>
+                        </li>
+                      </ul>
+                    </div>
                 </li>
               </ul>
             </div>
           </li>
           <li class="sidebar-dropdown">
-            <a href="#">
+            <a>
               <i class="fa fa-user"></i>
               <span>Students & Guardians</span>
-              <span class="badge badge-pill badge-danger">3</span>
             </a>
             <div class="sidebar-submenu">
               <ul>
-                <li>
-                  <a href="#">Student
-
-                  </a>
+                <li class="submenu-dropdown">
+                  <a>Student</a>
+                  <div class="submenu-submenu">
+                      <ul>
+                        <li>
+                          <a routerLink="/studentsguardians/admission">Admission</a>
+                        </li>
+                        <li>
+                          <a routerLink="/studentsguardians/registration">Registration</a>
+                        </li>
+                        <li>
+                            <a>Admission Form File</a>
+                        </li>
+                        <li>
+                            <a>Student Information</a>
+                          </li>
+                        <li>
+                              <a>View Student Report</a>
+                        </li>
+                      </ul>
+                    </div>
                 </li>
-                <li>
-                  <a href="#">Attendance
+                <li class="submenu-dropdown"s>
+                  <a>Attendance</a>
 
-                  </a>
+                  <div class="submenu-submenu">
+                      <ul>
+                        <li>
+                          <a>Biometric Attendance</a>
+                        </li>
+                        <li>
+                            <a>Delete Attendace</a>
+                        </li>
+                        <li>
+                            <a routerLink="/studentsguardians/markattendance">Manual Attendance</a>
+                          </li>
+                        <li>
+                              <a routerLink="/studentsguardians/markattendance">Attendance View</a>
+                        </li>
+                      </ul>
+                    </div>
                 </li>
-                <li>
-                  <a href="#">Guardian Info</a>
+                <li class="submenu-dropdown">
+                  <a>Guardian Info</a>
+                  <div class="submenu-submenu">
+                      <ul>
+                        <li>
+                          <a  routerLink="/studentsguardians/guardiansaccess">Guardians Access</a>
+                        </li>
+                        <li>
+                            <a>Guardians Information</a>
+                        </li>
+
+                      </ul>
+                    </div>
                 </li>
 
               </ul>
             </div>
           </li>
           <li class="sidebar-dropdown">
-            <a href="#">
+            <a>
               <i class="fa fa-user"></i>
               <span>Teachers</span>
-              <span class="badge badge-pill badge-danger">3</span>
             </a>
             <div class="sidebar-submenu">
               <ul>
-                <li>
-                  <a href="#">Teachers Information
-
-                  </a>
+                <li *ngFor="let teacher of teachers">
+                  <a routerLink="{{teacher.link}}">{{teacher.name}}</a>
                 </li>
-                <li>
-                  <a href="#">Assign New Teachers
-
-                  </a>
-                </li>
-                <li>
-                  <a href="#">Assign Incharge</a>
-                </li>
-
               </ul>
             </div>
           </li>
           <li class="sidebar-dropdown">
-            <a href="#">
+            <a>
               <i class="fa fa-calculator"></i>
               <span>Account</span>
-              <span class="badge badge-pill badge-danger">6</span>
             </a>
             <div class="sidebar-submenu">
-              <ul>
+              <ul class="submenu-dropdown">
                   <li>
-                      <a href="#">Account Settings</a>
+                      <a>Account Settings</a>
+                      <div class="submenu-submenu">
+                          <ul>
+                            <li>
+                              <a>Students Fee</a>
+                            </li>
+                            <li>
+                                <a>Employee's Salaries</a>
+                            </li>
+
+                          </ul>
+                        </div>
                     </li>
                 <li>
-                  <a href="#">Scholorship/Consessions
+                  <a>Scholorship/Consessions</a>
+
+                </li>
+                <li>
+                  <a>Add Account Title
 
                   </a>
                 </li>
                 <li>
-                  <a href="#">Add Account Title
+                  <a> Students Payments</a>
+                </li>
+                <li>
+                  <a>Transactions
 
                   </a>
                 </li>
                 <li>
-                  <a href="#">Students Payments</a>
-                </li>
-                <li>
-                  <a href="#">Transactions
-
-                  </a>
-                </li>
-                <li>
-                  <a href="#">Pay Salary
+                  <a>Pay Salary
 
                   </a>
                 </li>
@@ -172,41 +300,36 @@
           <!--Library Code-->
 
           <li class="sidebar-dropdown">
-              <a href="#">
+              <a>
                 <i class="fa fa-university"></i>
                 <span>Account</span>
-                <span class="badge badge-pill badge-danger">7</span>
               </a>
               <div class="sidebar-submenu">
                 <ul>
                     <li>
-                        <a href="#">Add Book Category</a>
-                      </li>
+                        <a>Add Book Category</a>
+                    </li>
+
                   <li>
-                    <a href="#">All Book Category
+                    <a>Add Books
 
                     </a>
                   </li>
                   <li>
-                    <a href="#">Add Books
+                    <a>Book List</a>
+                  </li>
+                  <li>
+                    <a>Add Library Member
 
                     </a>
                   </li>
                   <li>
-                    <a href="#">Book List</a>
-                  </li>
-                  <li>
-                    <a href="#">Add Library Member
+                    <a>Member List
 
                     </a>
                   </li>
                   <li>
-                    <a href="#">Member List
-
-                    </a>
-                  </li>
-                  <li>
-                      <a href="#">Issue & Return Books
+                      <a>Issue & Return Books
 
                       </a>
                     </li>
@@ -218,28 +341,27 @@
             <!-- Transport Code-->
 
             <li class="sidebar-dropdown">
-                <a href="#">
+                <a>
                   <i class="fa fa-bus"></i>
                   <span>Transport</span>
-                  <span class="badge badge-pill badge-danger">4</span>
                 </a>
                 <div class="sidebar-submenu">
                   <ul>
                       <li>
-                          <a href="#">Vehicles</a>
+                          <a routerLink="/transport/vehicles">Vehicles</a>
                         </li>
                     <li>
-                      <a href="#">Drivers
+                      <a>Drivers
 
                       </a>
                     </li>
                     <li>
-                        <a href="#">Routes
+                        <a>Routes
 
                         </a>
                       </li>
                     <li>
-                      <a href="#">All Transport
+                      <a routerLink="/transport/transport-fee">All Transport
 
                       </a>
                     </li>
@@ -252,23 +374,22 @@
               <!-- System Messages Code-->
 
               <li class="sidebar-dropdown">
-                  <a href="#">
+                  <a>
                     <i class="fa fa-envelope"></i>
                     <span>System Messages</span>
-                    <span class="badge badge-pill badge-danger">3</span>
                   </a>
                   <div class="sidebar-submenu">
                     <ul>
                         <li>
-                            <a href="#">Send Message</a>
+                            <a>Send Message</a>
                           </li>
                       <li>
-                        <a href="#">Sent Messages
+                        <a>Sent Messages
 
                         </a>
                       </li>
                       <li>
-                          <a href="#">Inbox
+                          <a>Inbox
 
                           </a>
                         </li>
@@ -280,18 +401,17 @@
                 <!--Mobile Messages Code-->
 
                 <li class="sidebar-dropdown">
-                    <a href="#">
+                    <a>
                       <i class="fa fa-envelope"></i>
                       <span>--Mobile Messages</span>
-                      <span class="badge badge-pill badge-danger">2</span>
                     </a>
                     <div class="sidebar-submenu">
                       <ul>
                           <li>
-                              <a href="#">Attendance Messages</a>
+                              <a>Attendance Messages</a>
                             </li>
                         <li>
-                          <a href="#">Custome Messages
+                          <a>Custome Messages
 
                           </a>
                         </li>
@@ -303,23 +423,22 @@
                   <!--Event & Calender Code-->
 
                   <li class="sidebar-dropdown">
-                      <a href="#">
+                      <a>
                         <i class="fa fa-calendar"></i>
                         <span>Event & Calendar</span>
-                        <span class="badge badge-pill badge-danger">3</span>
                       </a>
                       <div class="sidebar-submenu">
                         <ul>
                             <li>
-                                <a href="#">Events</a>
+                                <a >Events</a>
                               </li>
                           <li>
-                            <a href="#">Calendar
+                            <a>Calendar
 
                             </a>
                           </li>
                           <li>
-                              <a href="#">Scheduler
+                              <a>Scheduler
 
                               </a>
                             </li>
@@ -331,7 +450,7 @@
                     <!--Profile Code -->
 
                     <li class="sidebar">
-                        <a href="#">
+                        <a>
                           <i class="fa fa-newspaper"></i>
                           <span>Profile</span>
                      </a>
@@ -347,11 +466,13 @@
     <div class="sidebar-footer">
       <a href="#">
         <i class="fa fa-bell"></i>
-        <span class="badge badge-pill badge-warning notification">3</span>
+        <span class="badge badge-pill badge-danger">3</span>
+
       </a>
       <a href="#">
         <i class="fa fa-envelope"></i>
-        <span class="badge badge-pill badge-success notification">7</span>
+        <span class="badge badge-pill badge-danger">5</span>
+
       </a>
       <a href="#">
         <i class="fa fa-cog"></i>

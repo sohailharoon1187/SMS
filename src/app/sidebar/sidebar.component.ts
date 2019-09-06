@@ -5,11 +5,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.css']
 })
 export class SidebarComponent implements OnInit {
+  teachers = [
+    { name: 'Teachers Information', link: '/teachers/teacherinfo' },
+    { name: 'Assign New Teachers', link: '/teachers/assignteacher' },
+    { name: 'Assign Incharge', link: '/teachers/assignincharge' }
+  ];
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
-
+  ngOnInit() {}
 }
